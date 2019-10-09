@@ -1,0 +1,356 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Hind Regular'), local('Hind-Regular'), url(https://fonts.gstatic.com/s/hind/v10/5aU69_a8oxmIdGl4AQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Hind SemiBold'), local('Hind-SemiBold'), url(https://fonts.gstatic.com/s/hind/v10/5aU19_a8oxmIfLZcERySiA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN8rsOUuhs.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 2rem;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Hind', sans-serif;
+}
+.hash {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20rem;
+  font-weight: bold;
+  color: rgba(220, 220, 220, 0.5);
+}
+@media (min-width: 500px) {
+  .hash {
+    font-size: 30rem;
+    top: 0;
+  }
+}
+@media (min-width: 800px) {
+  .hash {
+    font-size: 40rem;
+  }
+}
+a {
+  color: darkorange;
+  text-decoration: none;
+}
+a:hover {
+  color: gray;
+}
+header,
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 75%;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+header h1,
+section h1,
+header h2,
+section h2 {
+  font-size: 5rem;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: lowercase;
+}
+@media (min-width: 500px) {
+  header h1,
+  section h1,
+  header h2,
+  section h2 {
+    font-size: 6rem;
+  }
+}
+header h2,
+section h2 {
+  font-size: 4rem;
+}
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+@media (min-width: 680px) {
+  nav {
+    width: 40%;
+  }
+}
+#about .aboutFluff,
+#work .workFluff,
+#contact .contactFluff {
+  font-size: 1.6rem;
+  margin-top: 2%;
+  display: flex;
+}
+#about .aboutFluff {
+  display: flex;
+  flex-direction: column;
+}
+#about .aboutFluff p {
+  line-height: 2.5rem;
+  text-align: justify;
+}
+#about .aboutFluff .socialLinks {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3% 0;
+}
+#about .aboutFluff .interests {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+#about .aboutFluff .interests a {
+  width: 45%;
+  margin: 10% 0;
+}
+@media (min-width: 500px) {
+  #about .aboutFluff .interests a {
+    width: 16%;
+    margin: 2% 0;
+  }
+}
+#about .aboutFluff .interests a img {
+  width: 70%;
+}
+#work .workFluff {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#work .workFluff h2,
+#work .workFluff h3,
+#work .workFluff h4 {
+  margin: 2% 0;
+}
+#work .workFluff h2 a,
+#work .workFluff h3 a,
+#work .workFluff h4 a {
+  font-size: 1.25rem;
+}
+#work .workFluff div {
+  width: 98%;
+  margin: 2% 0;
+}
+#work .workFluff div p {
+  line-height: 2rem;
+}
+#work .workFluff div ul {
+  list-style: square;
+  margin: 2% 0;
+  margin-left: 5%;
+  width: 75%;
+}
+#work .workFluff div ul li {
+  padding: 1% 0;
+}
+#contact .contactFluff form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#contact .contactFluff form input {
+  width: 98%;
+  margin: 2% 0;
+  font-size: 1.6rem;
+  padding: 2%;
+  background-color: #f0f0f0;
+  border: none;
+}
+#contact .contactFluff form textarea {
+  margin: 4% 0;
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 2%;
+  background-color: #f0f0f0;
+  border: none;
+}
+#contact .contactFluff form div {
+  width: 100%;
+  text-align: center;
+}
+#contact .contactFluff form div input {
+  background-color: darkorange;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+@media (min-width: 500px) {
+  #contact .contactFluff form input {
+    width: 48%;
+  }
+}
+footer {
+  text-align: center;
+  font-size: 1.125em;
+  margin: 2% 0;
+}
